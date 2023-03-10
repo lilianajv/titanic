@@ -6,7 +6,7 @@ import seaborn as sns
 import pickle
 import sklearn
 
-data = pd.read_csv("clean_titanic.csv)
+data = pd.read_csv("clean_titanic".csv)
 modelo = pickle.load(open("modelo.pickle", "rb"))
 
 # titulo
@@ -48,9 +48,9 @@ with col1:
   if sexo == "M":
     sexo = 1
   else:
-    sexo=0
+    sexo = 0
  par_hijos = st.slider("Número entre padres e hijos", 0,8)
- hermanos_esposos = st.slider("Número entre hermanos(as) y esposos(as)", 0-5)
+ hermanos_esposos = st.slider("Número entre hermanos(as) y esposo(a)", 0-5)
 
  with col2:
                               
