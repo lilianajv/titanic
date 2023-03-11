@@ -52,12 +52,12 @@ with col1:
   par_hijos = st.slider("Número entre padres e hijos", 0, 8)
   hermanos_esposos = st.slider("Número entre hermanos(as) y esposo(a)", 0, 5)
 
- with col2:
+with col2:
                               
-   st.header("Boleto")
-   clase = st.selectbox("clase", (1, 2, 3))
-   edad = st.slider("Edad", 0, 99)
-   fare = st.slider("Disposicion a pagar el boleto", 0, 500)
+  st.header("Boleto")
+  clase = st.selectbox("clase", (1, 2, 3))
+  edad = st.slider("Edad", 0, 99)
+  fare = st.slider("Disposicion a pagar el boleto", 0, 500)
 
 #Prediccion
 if st.button("Predecir"):
