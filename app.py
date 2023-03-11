@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
-import sklearn
+import scikit-learn
 
 data = pd.read_csv("clean_titanic".csv)
 modelo = pickle.load(open("modelo.pickle", "rb"))
