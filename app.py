@@ -15,7 +15,7 @@ st.title("Habras sobrevivido al naufragio del titanic?")
          
 # Exploracion inicial
          
-st. header("Exploracion inical")
+st. header("Exploracion inicial")
 st.subheader("los primeros datos")
 st.dataframe(data.head())
 st.subheader("un descriptivo")
@@ -25,7 +25,7 @@ st.dataframe(data.describe())
                    
 st.header("Visualizacion")
 fig, ax = plt.subplots(1,4, sharey=True, figsize=(10,6))
-ax[0].set_yalabel("%")
+ax[0].set_ylabel("%")
 for idx, col in enumerate(["Pclass", "SibSp", "Parch", "Sex_male"]):
   data[col].value_counts(normalize=True).plot(kind="bar", ax=ax[idx], title=col)
 plt.show()
