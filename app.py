@@ -34,7 +34,7 @@ st.pyplot(fig)
 fig, ax = plt.subplots(1,4, sharey=True, figsize=(10,6))
 ax[0].set_ylabel("%")
 for idx, col in enumerate(["Pclass", "SibSp", "Parch", "Sex_male"]):
-  pd.crosstab(df[col], df["Survived"]).plot(kind="bar", ax=ax[idx], title=col)
+  pd.crosstab(data[col], data["Survived"]).plot(kind="bar", ax=ax[idx], title=col)
 plt.show()
 st.pyplot(fig)
 
