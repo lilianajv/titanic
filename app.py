@@ -6,7 +6,7 @@ import seaborn as sns
 import pickle
 import sklearn
 
-data = pd.read_csv("clean_titanic".csv)
+data = pd.read_csv("clean_titanic.csv")
 modelo = pickle.load(open("modelo.pickle", "rb"))
 
 # titulo
